@@ -1,0 +1,20 @@
+spring:
+#  datasource: # 스프링 부트에선 이 설정이 없어서 기본으로 해준다. test 전용! 메모리모
+#    url: jdbc:h2:mem:test
+#    username: sa
+#    password:
+#    driver-class-name: org.h2.Driver
+#
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: create-drop 으로 기본적으로 돌아감 스프링 부트에선 -> 알아서 자원정리
+#    properties:
+#      hibernate:
+#        show_sql: true
+#        format_sql: true
+
+
+logging.level:
+  org.hibernate.SQL: debug #SQL 로깅
+  org.hibernate.type: trace #SQL 파리미터 로깅
